@@ -14,7 +14,7 @@ print('\nSeja bem vindo ao nosso aplicativo de mensagens!\nPara se conectar prec
 
 try:
     HOST = input("HOST: ") # IP do servidor
-    PORT = 12345 #(input("Porta: ")) #Porta que o servidor escuta
+    PORT = int(input("Porta: "))#Porta que o servidor escuta
     
     cliente = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     print('Se deseja se conectar ao CHAT junto a outros clientes, terá que criar um Nome de Usuário')
